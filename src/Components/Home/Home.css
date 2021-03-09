@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.country-details-area{
+    width: 80%;
+    margin:30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+}
+.bg-dark{
+    background-color: #333;
+    height: auto;
+}
+.bg-light{
+    background-color: #eeeeee;
+}
+.copyright{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+.copyright span{
+    color: orangered;
+    font-weight: bold;
+}
+.darkMode{
+    margin-left: 10%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:orangered;
+    padding: 10px;
+    border-radius: 50%;
+}
+.darkMode .dark-icon{
+    font-size: 30px;
+}
+
+@media screen and (max-width:992px){
+    .country-details-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:700px){
+    .country-details-area{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
